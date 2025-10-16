@@ -85,7 +85,7 @@
         camber    = "0.02">
         <stall   aoa="16" width="5"    peak="1.5"/>
         <flap0 start="0"    end="0.95" lift="1.0" drag="1.5"/>
-        <flap1 start="0"    end="0.95" lift="1.0" drag="1"/>
+        <flap1 start="0"    end="0.95" lift="1.0" drag="100"/>
 
         <control-input  control="FLAP0" axis="/controls/flight/aileron"                  split="true"/>
         <control-input  control="FLAP0" axis="/controls/flight/aileron-trim"             split="true"/>
@@ -253,8 +253,8 @@
 
   <jet x="-13.609" y="2.229" z="1.986"
        mass          = "5000"
-       thrust        = "29900"
-       afterburner   = "108800"
+       thrust        = "19900"
+       afterburner   = "78800"
        tsfc          = "0.25"
        exhaust-speed = "1830"
        egt           = "950"
@@ -266,8 +266,8 @@
 
   <jet x="-13.609" y="0.741" z="1.986"
        mass          = "5000"
-       thrust        = "29900"
-       afterburner   = "108800"
+       thrust        = "19900"
+       afterburner   = "78800"
        tsfc          = "0.25"
        exhaust-speed = "1830"
        egt           = "950"
@@ -279,8 +279,8 @@
 
   <jet x="-13.609" y="-0.741" z="1.986"
        mass          = "5000"
-       thrust        = "29900"
-       afterburner   = "108800"
+       thrust        = "19900"
+       afterburner   = "78800"
        tsfc          = "0.25"
        exhaust-speed = "1830"
        egt           = "950"
@@ -292,8 +292,8 @@
 
   <jet x="-13.609" y="-2.229" z="1.986"
        mass          = "5000"
-       thrust        = "29900"
-       afterburner   = "108800"
+       thrust        = "19900"
+       afterburner   = "78800"
        tsfc          = "0.25"
        exhaust-speed = "1830"
        egt           = "950"
@@ -305,8 +305,8 @@
 
   <jet x="-13.609" y="-3.718" z="1.986"
        mass          = "5000"
-       thrust        = "78800"
-       afterburner   = "108800"
+       thrust        = "19900"
+       afterburner   = "78800"
        tsfc          = "0.25"
        exhaust-speed = "1830"
        egt           = "950"

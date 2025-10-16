@@ -88,6 +88,7 @@ var reheat = func {
   setprop("/controls/engines/engine[4]/afterburner", a4);
   setprop("/controls/engines/engine[5]/afterburner", a5);
   setprop("/controls/flight/spoilers",spoilers);
+  setprop("/sim/multiplay/visibility-range-nm",1000);
   settimer(reheat, 0.2);
 
 }
