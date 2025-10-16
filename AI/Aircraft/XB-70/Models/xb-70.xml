@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>xb-70.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>xb1-70</object-name>
+    <object-name>xb2-70</object-name>
+    <object-name>portesfermees</object-name>
+    <object-name>portesouvertes</object-name>
+    <object-name>WingtipRight</object-name>
+    <object-name>WingtipLeft</object-name>
+    <object-name>NoseRamp</object-name>
+    <object-name>OuterWindshield</object-name>
+
+    <object-name>rouessorties</object-name>
+  </animation>
+
+  <effect>
+    <inherits-from>AI/Aircraft/XB-70/Models/Effects/Bump/bumpspec</inherits-from>
+    <object-name>xb1-70</object-name>
+    <object-name>xb2-70</object-name>
+    <object-name>portesfermees</object-name>
+    <object-name>portesouvertes</object-name>
+    <object-name>WingtipRight</object-name>
+    <object-name>WingtipLeft</object-name>
+    <object-name>NoseRamp</object-name>
+    <object-name>OuterWindshield</object-name>
+  </effect>
+
+  <model>
+    <path>Effects/light/all-lights.xml</path>
+  </model>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>WingtipLeft</object-name>
+    <property>/ai/models/multiplayer/sim/multiplay/generic/float[30]</property>
+    <factor>-65</factor>
+    <axis>
+      <x1-m> 19.717 </x1-m>
+      <y1-m> -9.442 </y1-m>
+      <z1-m>  2.523 </z1-m>
+      <x2-m> 11.240 </x2-m>
+      <y2-m> -9.442 </y2-m>
+      <z2-m>  2.075 </z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>WingtipRight</object-name>
+    <property>/ai/models/multiplayer/sim/multiplay/generic/float[30]</property>
+    <factor>65</factor>
+    <axis>
+      <x1-m> 19.717 </x1-m>
+      <y1-m>  9.442 </y1-m>
+      <z1-m>  2.523 </z1-m>
+      <x2-m> 11.240 </x2-m>
+      <y2-m>  9.442 </y2-m>
+      <z2-m>  2.075 </z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>OuterWindshield</object-name>
+    <property>/ai/models/multiplayer/sim/multiplay/generic/float[30]</property>
+    <factor> 9.39 </factor>
+    <center>
+      <x-m> -23.521 </x-m>
+      <y-m>   0.000 </y-m>
+      <z-m>   4.739 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>NoseRamp</object-name>
+    <property>/ai/models/multiplayer/sim/multiplay/generic/float[30]</property>
+    <factor> -3.75 </factor>
+    <center>
+      <x-m> -28.631 </x-m>
+      <y-m>   0.000 </y-m>
+      <z-m>   3.370 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <!-- Roues sorties -->
+  <animation>
+    <type>select</type>
+    <object-name>rouessorties</object-name>
+    <object-name>portesouvertes</object-name>
+    <condition>
+      <less-than>
+        <property>velocities/true-airspeed-kt</property>
+        <value>60</value>
+      </less-than>
+    </condition>
+  </animation>
+
+  <!-- Roues rentrée -->
+  <animation>
+    <type>select</type>
+    <object-name>portesfermees</object-name>
+    <condition>
+      <greater-than>
+        <property>velocities/true-airspeed-kt</property>
+        <value>59</value>
+      </greater-than>
+    </condition>
+  </animation>
+
+</PropertyList>

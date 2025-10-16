@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <model>
+    <name>TiptrailNOALS</name>
+    <path>Classic/tiptrail.xml</path>
+  </model>
+
+  <animation>
+    <type>select</type>
+    <object-name>TiptrailNOALS</object-name>
+    <condition>
+      <not><property>/sim/rendering/shaders/skydome</property></not>
+    </condition>
+  </animation>
+
+  <model>
+    <name>TiptrailALS</name>
+    <path>ALS/tiptrail.xml</path>
+  </model>
+
+  <animation>
+    <type>select</type>
+    <object-name>TiptrailALS</object-name>
+    <condition>
+      <property>/sim/rendering/shaders/skydome</property>
+    </condition>
+  </animation>
+
+  <model>
+    <name>TiptrailHDR</name>
+    <path>HDR/tiptrail.xml</path>
+  </model>
+
+  <animation>
+    <type>select</type>
+    <object-name>TiptrailHDR</object-name>
+    <condition>
+      <property>/sim/rendering/hdr/hdr-enabled</property>
+    </condition>
+  </animation>
+
+</PropertyList>

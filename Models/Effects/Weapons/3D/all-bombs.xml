@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <model>
+    <name>Bomb</name>
+    <path>Abomb.xml</path>
+    <offsets>
+      <x-m> 5.000 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 1.310 </z-m>
+    </offsets>
+  </model>
+
+  <animation>
+    <type>select</type>
+    <object-name>Bomb</object-name>
+    <condition>
+      <equals>
+        <!-- <property>ai/submodels/submodel[0]/count</property> -->
+        <property>sim/multiplay/generic/int[11]</property>
+        <value>1</value>
+      </equals>
+    </condition>
+  </animation>
+
+</PropertyList>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>epr-bb.ac</path>
+
+  <animation>
+    <object-name>fond</object-name>
+    <object-name>face</object-name>
+    <object-name>Aiguille</object-name>
+    <object-name>Index-n-xx</object-name>
+    <object-name>Index-x-nx</object-name>
+    <object-name>Index-x-xn</object-name>
+    <object-name>Index</object-name>
+
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>fond</object-name>
+    <object-name>face</object-name>
+    <object-name>Aiguille</object-name>
+    <object-name>Index-n-xx</object-name>
+    <object-name>Index-x-nx</object-name>
+    <object-name>Index-x-xn</object-name>
+    <object-name>Index</object-name>
+
+    <object-name>vitre</object-name>
+  </animation>
+
+  <!-- working for Compositor -->
+  <effect>
+    <inherits-from>../../../../Effects/Glass/glass</inherits-from>
+    <object-name>vitre</object-name>
+  </effect>
+
+  <animation>
+    <type>material</type>
+    <object-name>face</object-name>
+    <object-name>Index-n-xx</object-name>
+    <object-name>Index-x-nx</object-name>
+    <object-name>Index-x-xn</object-name>
+    <object-name>Index</object-name>
+    <condition>
+      <property>controls/electric/battery-switch</property>
+    </condition>
+    <emission>
+      <factor-prop>controls/lighting/instruments-norm</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.40 </green>
+      <blue>  0.30 </blue>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>Aiguille</object-name>
+    <condition>
+      <!-- <not><property>controls/engines/engine[0]/cutoff</property></not> -->
+      <not><property>sim/multiplay/generic/bool[17]</property></not>
+    </condition>
+    <property>engines/engine[0]/epr</property>
+    <interpolation>
+      <entry><ind> 1.000 </ind><dep>   0 </dep></entry>
+      <entry><ind> 1.066 </ind><dep>  50 </dep></entry>  <!-- 1.1 -->
+      <entry><ind> 1.132 </ind><dep>  90 </dep></entry>  <!-- 1.2 -->
+      <entry><ind> 1.330 </ind><dep> 120 </dep></entry>  <!-- 1.5 -->
+      <entry><ind> 1.660 </ind><dep> 200 </dep></entry>  <!-- 2.0 -->
+      <entry><ind> 1.990 </ind><dep> 280 </dep></entry>  <!-- 2.5 -->
+      <entry><ind> 2.320 </ind><dep> 360 </dep></entry>  <!-- 3.0 -->
+    </interpolation>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+</PropertyList>

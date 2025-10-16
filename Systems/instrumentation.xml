@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <kr-87>
+    <test                           type="int">1</test>
+  </kr-87>
+
+  <annun>
+    <enginefire                     type="bool">false</enginefire>
+    <voltagelow                     type="bool">false</voltagelow>
+    <doorwarning                    type="bool">false</doorwarning>
+    <oilpreslow                     type="bool">false</oilpreslow>
+    <vacuumlow                      type="bool">false</vacuumlow>
+    <generatoroff                   type="bool">false</generatoroff>
+    <resfuellow                     type="bool">false</resfuellow>
+    <epowerlvr                      type="bool">false</epowerlvr>
+    <leftfuellow                    type="bool">false</leftfuellow>
+    <auxfuelpump                    type="bool">false</auxfuelpump>
+    <rightfuellow                   type="bool">false</rightfuellow>
+    <chipdetect                     type="bool">false</chipdetect>
+    <fuelpreslow                    type="bool">false</fuelpreslow>
+    <stbyelecpwr                    type="bool">false</stbyelecpwr>
+    <stbyelecinop                   type="bool">false</stbyelecinop>
+    <starter                        type="bool">false</starter>
+    <inverterinop                   type="bool">false</inverterinop>
+    <windshieldantiice              type="bool">false</windshieldantiice>
+    <ignition                       type="bool">false</ignition>
+    <fuelselectoff                  type="bool">false</fuelselectoff>
+    <deicepres                      type="bool">false</deicepres>
+  </annun>
+
+  <elt>
+    <on                             type="bool">false</on>
+    <armed                          type="bool">true</armed>
+    <test                           type="bool">false</test>
+  </elt>
+
+  <encoder>
+    <serviceable                    type="bool">true</serviceable>
+    <name>encoder</name>
+    <number>0</number>
+  </encoder>
+
+  <dme                              n="0">
+    <serviceable                    type="bool">true</serviceable>
+    <power-btn                      type="bool">true</power-btn>
+    <ident                          type="bool">false</ident>
+    <volume                         type="double">1.0</volume>
+    <frequencies>
+      <source                       type="string">/instrumentation/dme[0]/frequencies/selected-mhz</source>
+    </frequencies>
+  </dme>
+
+  <dme                              n="1">
+    <serviceable                    type="bool">true</serviceable>
+    <power-btn                      type="bool">true</power-btn>
+    <ident                          type="bool">false</ident>
+    <volume                         type="double">1.0</volume>
+    <frequencies>
+      <source                       type="string">/instrumentation/dme[1]/frequencies/selected-mhz</source>
+    </frequencies>
+  </dme>
+
+  <nav-source>
+    <selector                       type="int">0</selector>
+    <in-range                       type="bool">false</in-range>
+    <from-flag                      type="bool">false</from-flag>
+    <to-flag                        type="bool">false</to-flag>
+    <nav-loc                        type="bool">false</nav-loc>
+    <has-gs                         type="bool">false</has-gs>
+    <gs-in-range                    type="bool">false</gs-in-range>
+    <gs-rate-of-climb               type="double">0.0</gs-rate-of-climb>
+    <gs-rate-of-climb-fpm           type="double">0.0</gs-rate-of-climb-fpm>
+    <heading-needle-deflection      type="double">0.0</heading-needle-deflection>
+    <heading-needle-deflection-norm type="double">0.0</heading-needle-deflection-norm>
+    <gs-needle-deflection           type="double">0.0</gs-needle-deflection>
+    <gs-needle-deflection-norm      type="double">0.0</gs-needle-deflection-norm>
+    <selected-radial-deg            type="double">0.0</selected-radial-deg>
+    <signal-valid                   type="bool">false</signal-valid>
+    <target-radial-deg              type="double">0.0</target-radial-deg>
+    <course-error                   type="double">0.0</course-error>
+    <watchdog                       type="double">0.0</watchdog>
+  </nav-source>
+
+  <nav                              n="0">
+    <serviceable                    type="bool">true</serviceable>
+    <power-btn                      type="bool">true</power-btn>
+    <volume                         type="double">0.5</volume>
+    <audio-btn                      type="bool">true</audio-btn>
+    <ident                          type="bool">true</ident>
+    <display-volume                 type="bool">false</display-volume>
+    <radials>
+      <target-radial-deg            type="float">0</target-radial-deg>
+    </radials>
+    <heading-needle-deflection-ils  type="double">0.0</heading-needle-deflection-ils>
+    <heading-needle-deflection-disp type="double">0.0</heading-needle-deflection-disp>
+  </nav>
+
+  <nav                              n="1">
+    <serviceable                    type="bool">true</serviceable>
+    <power-btn                      type="bool">true</power-btn>
+    <volume                         type="double">0.5</volume>
+    <audio-btn                      type="bool">true</audio-btn>
+    <ident                          type="bool">true</ident>
+    <display-volume                 type="bool">false</display-volume>
+    <radials>
+      <target-radial-deg            type="float">0</target-radial-deg>
+    </radials>
+    <heading-needle-deflection-ils  type="double">0.0</heading-needle-deflection-ils>
+    <heading-needle-deflection-disp type="double">0.0</heading-needle-deflection-disp>
+  </nav>
+
+  <comm                             n="0">
+    <serviceable                    type="bool">true</serviceable>
+    <power-btn                      type="bool">true</power-btn>
+    <volume                         type="double">0.95</volume>
+    <display-volume                 type="bool">false</display-volume>
+    <frequencies>
+      <selected-mhz                 type="double">121.50</selected-mhz>
+    </frequencies>
+  </comm>
+
+  <comm                             n="1">
+    <serviceable                    type="bool">true</serviceable>
+    <power-btn                      type="bool">true</power-btn>
+    <volume                         type="double">0.95</volume>
+    <display-volume                 type="bool">false</display-volume>
+    <frequencies>
+      <standby-mhz                  type="double">133.70</standby-mhz>
+    </frequencies>
+  </comm>
+
+  <adf                              n="0">
+    <adf-btn                        type="bool">true</adf-btn>
+    <bfo-btn                        type="bool">true</bfo-btn>
+    <volume-norm                    type="double">0.5</volume-norm>
+    <power-btn                      type="bool">false</power-btn>
+    <frequencies>
+      <name                         type="string">adf</name>
+      <digit                        n="0">0</digit>
+      <digit                        n="1">0</digit>
+      <digit                        n="2">0</digit>
+      <digit                        n="3">0</digit>
+      <standby-khz                  type="int">291</standby-khz>
+      <selected-khz                 type="int">379</selected-khz>
+    </frequencies>
+  </adf>
+
+  <adf                              n="1">
+    <adf-btn                        type="bool">true</adf-btn>
+    <bfo-btn                        type="bool">true</bfo-btn>
+    <volume-norm                    type="double">0.5</volume-norm>
+    <power-btn                      type="bool">false</power-btn>
+    <frequencies>
+      <name                         type="string">adf</name>
+      <digit                        n="0">0</digit>
+      <digit                        n="1">0</digit>
+      <digit                        n="2">0</digit>
+      <digit                        n="3">0</digit>
+      <standby-khz                  type="int">291</standby-khz>
+      <selected-khz                 type="int">379</selected-khz>
+    </frequencies>
+  </adf>
+
+  <transponder                      n="0">
+    <number                         type="int">0</number>
+    <name                           type="string">transponder</name>
+    <altitude-disp                  type="int">0</altitude-disp>
+    <id-code-disp                   type="int">0</id-code-disp>
+    <inputs>
+      <knob-mode                    type="int">4</knob-mode>
+      <mode                         type="int">4</mode> <!-- 0 = Mode A, 1 = Mode C, 2 = Mode S -->
+    </inputs>
+    <bus-volts                      type="double">8.0</bus-volts>
+    <encoder-path                   type="string">/instrumentation/encoder</encoder-path>
+    <kt70-compatibility             type="bool">true</kt70-compatibility>
+  </transponder>
+
+</PropertyList>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <fuel>
+    <tank        n="0">
+      <tank-num  type="int">0</tank-num>
+      <selected  type="bool">false</selected>
+      <level-lbs archive="y">75000</level-lbs>
+    </tank>
+    <tank        n="1">
+      <tank-num  type="int">1</tank-num>
+      <selected  type="bool">false</selected>
+      <level-lbs archive="y">75000</level-lbs>
+    </tank>
+    <tank        n="2">
+      <tank-num  type="int">2</tank-num>
+      <selected  type="bool">false</selected>
+      <level-lbs archive="y">75000</level-lbs>
+    </tank>
+    <tank        n="3">
+      <tank-num  type="int">3</tank-num>
+      <selected  type="bool">false</selected>
+      <level-lbs archive="y">75000</level-lbs>
+    </tank>
+  </fuel>
+
+</PropertyList>

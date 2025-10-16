@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <bomb>
+    <model>Aircraft/XB-70/Models/Effects/Weapons/3D/Abomb.xml</model>
+    <!-- <trigger>controls/armament/trigger</trigger> -->
+    <trigger>sim/multiplay/generic/int[10]</trigger>
+    <speed-prop>
+      <property>/velocities/airspeed-kt</property>
+    </speed-prop>
+    <repeat>false</repeat>
+    <delay>0.8</delay>
+    <count>1</count>
+    <yaw-offset>0</yaw-offset>
+    <pitch-offset>-2</pitch-offset>
+    <cd>0.16</cd>
+    <weight>500</weight>
+    <fuse-range>2.2</fuse-range> <!-- all in feet -->
+    <eda>0.61629</eda>
+    <life>50</life>
+    <buoyancy>0</buoyancy>
+    <aero-stabilised>true</aero-stabilised>
+    <collision>true</collision>
+    <expiry>true</expiry>
+    <impact>true</impact>
+    <impact-report>sim/ai/aircraft/impact/bullet</impact-report>
+    <impact-reports>ai/models/model-impact</impact-reports>
+    <submodel-path>Aircraft/XB-70/Models/Effects/Weapons/bomb/bomb-impact.xml</submodel-path>
+    <animation>
+      <enable-hot type="bool">false</enable-hot>
+      <attach>world</attach>
+      <placer>
+        <type>point</type>
+      </placer>
+    </animation>
+  </bomb>
+
+  <submodel>
+    <name>bomb</name>
+    <model           alias="../../bomb/model"/>
+    <trigger         alias="../../bomb/trigger"/>
+    <speed-prop      alias="../../bomb/speed-prop"/>
+    <repeat          alias="../../bomb/repeat"/>
+    <delay           alias="../../bomb/delay"/>
+    <count           alias="../../bomb/count"/>
+    <cd              alias="../../bomb/cd"/>
+    <weight          alias="../../bomb/weight"/>
+    <fuse-range      alias="../../bomb/fuse-range"/>
+    <eda             alias="../../bomb/eda"/>
+    <life            alias="../../bomb/life"/>
+    <buoyancy        alias="../../bomb/buoyancy"/>
+    <aero-stabilised alias="../../bomb/aero-stabilised"/>
+    <collision       alias="../../bomb/collision"/>
+    <expiry          alias="../../bomb/expiry"/>
+    <impact          alias="../../bomb/impact"/>
+    <impact-report   alias="../../bomb/impact-report"/>
+    <impact-reports  alias="../../bomb/impact-reports"/>
+    <submodel-path   alias="../../bomb/submodel-path"/>
+    <animation       alias="../../bomb/animation"/>
+    <offsets>
+      <x-m>  5.000 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  1.310 </z-m>
+    </offsets>
+  </submodel>
+
+</PropertyList>

@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>alt.ac</path>
+
+  <animation>
+    <object-name>fond</object-name>
+    <object-name>face</object-name>
+    <object-name>bouton</object-name>
+    <object-name>indalti</object-name>
+    <object-name>indalth</object-name>
+    <object-name>indaltt</object-name>
+    <object-name>indaltlmob</object-name>
+    <object-name>barre</object-name>
+    <object-name>num1</object-name>
+    <object-name>num2</object-name>
+    <object-name>num3</object-name>
+    <object-name>alt10000</object-name>
+    <object-name>alt1000</object-name>
+    <object-name>alt100</object-name>
+    <object-name>alt10</object-name>
+    <object-name>alt1</object-name>
+    <object-name>target1</object-name>
+    <object-name>target2</object-name>
+    <object-name>target3</object-name>
+    <object-name>target4</object-name>
+    <object-name>target5</object-name>
+
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>fond</object-name>
+    <object-name>face</object-name>
+    <object-name>bouton</object-name>
+    <object-name>indalti</object-name>
+    <object-name>indalth</object-name>
+    <object-name>indaltt</object-name>
+    <object-name>indaltlmob</object-name>
+    <object-name>barre</object-name>
+    <object-name>num1</object-name>
+    <object-name>num2</object-name>
+    <object-name>num3</object-name>
+    <object-name>alt10000</object-name>
+    <object-name>alt1000</object-name>
+    <object-name>alt100</object-name>
+    <object-name>alt10</object-name>
+    <object-name>alt1</object-name>
+    <object-name>target1</object-name>
+    <object-name>target2</object-name>
+    <object-name>target3</object-name>
+    <object-name>target4</object-name>
+    <object-name>target5</object-name>
+    <object-name>vitre</object-name>
+  </animation>
+
+  <!-- working for Compositor -->
+  <effect>
+    <inherits-from>../../../../Effects/Glass/glass</inherits-from>
+    <object-name>vitre</object-name>
+  </effect>
+
+  <animation>
+    <type>material</type>
+    <object-name>face</object-name>
+    <object-name>indaltt</object-name>
+    <object-name>indalth</object-name>
+    <object-name>indalti</object-name>
+    <object-name>indaltlmob</object-name>
+    <object-name>barre</object-name>
+    <object-name>alt10000</object-name>
+    <object-name>alt1000</object-name>
+    <object-name>alt100</object-name>
+    <object-name>alt10</object-name>
+    <object-name>alt1</object-name>
+    <object-name>target1</object-name>
+    <object-name>target2</object-name>
+    <object-name>target3</object-name>
+    <object-name>target4</object-name>
+    <object-name>target5</object-name>
+    <object-name>num1</object-name>
+    <object-name>num2</object-name>
+    <object-name>num3</object-name>
+    <condition>
+      <property>controls/electric/battery-switch</property>
+    </condition>
+    <emission>
+      <factor-prop>controls/lighting/instruments-norm</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.40 </green>
+      <blue>  0.30 </blue>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>textranslate</type>
+    <object-name>indaltt</object-name>
+    <property>instrumentation/altimeter/indicated-altitude-ft</property>
+    <interpolation>
+      <entry><ind>     0 </ind><dep> 0.00 </dep></entry>
+      <entry><ind> 49000 </ind><dep> 0.96 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+    <center>
+      <x-m> 0 </x-m>
+      <y-m> 0 </y-m>
+      <z-m> 0 </z-m>
+    </center>
+  </animation>
+
+  <animation>
+    <type>textranslate</type>
+    <object-name>indalth</object-name>
+    <property>instrumentation/altimeter/indicated-altitude-ft</property>
+    <factor>0.001</factor>
+    <offset>0</offset>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+    <center>
+      <x-m> 0 </x-m>
+      <y-m> 0 </y-m>
+      <z-m> 0 </z-m>
+    </center>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>indaltlmob</object-name>
+    <property>instrumentation/vertical-speed-indicator/indicated-speed-fpm</property>
+    <interpolation>
+      <entry><ind> -10000 </ind><dep> -0.078 </dep></entry>
+      <entry><ind>  -1000 </ind><dep> -0.051 </dep></entry>
+      <entry><ind>   -500 </ind><dep> -0.026 </dep></entry>
+      <entry><ind>      0 </ind><dep>  0.000 </dep></entry>
+      <entry><ind>    500 </ind><dep>  0.026 </dep></entry>
+      <entry><ind>   1000 </ind><dep>  0.051 </dep></entry>
+      <entry><ind>  10000 </ind><dep>  0.078 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+    <center>
+      <x-m> 0 </x-m>
+      <y-m> 0 </y-m>
+      <z-m> 0 </z-m>
+    </center>
+  </animation>
+
+  <animation>
+    <type>textranslate</type>
+    <object-name>alt10000</object-name>
+    <property>autopilot/settings/target-altitude-ft</property>
+    <factor>0.00001</factor>
+    <step>10000</step>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>textranslate</type>
+    <object-name>alt1000</object-name>
+    <property>autopilot/settings/target-altitude-ft</property>
+    <factor>0.0001</factor>
+    <step>1000</step>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>textranslate</type>
+    <object-name>alt100</object-name>
+    <property>autopilot/settings/target-altitude-ft</property>
+    <factor>0.001</factor>
+    <step>100</step>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>textranslate</type>
+    <object-name>alt10</object-name>
+    <property>autopilot/settings/target-altitude-ft</property>
+    <factor>0.01</factor>
+    <step>10</step>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>textranslate</type>
+    <object-name>alt1</object-name>
+    <property>autopilot/settings/target-altitude-ft</property>
+    <factor>0.1</factor>
+    <step>1</step>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>bouton</object-name>
+    <visible>true</visible>
+    <action>
+      <button>3</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>instrumentation/altimeter/setting-inhg</property>
+        <step>-0.01</step>
+        <min>20</min>
+        <max>38</max>
+        <wrap>0</wrap>
+      </binding>
+    </action>
+    <action>
+      <button>4</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>instrumentation/altimeter/setting-inhg</property>
+        <step>0.01</step>
+        <min>20</min>
+        <max>38</max>
+        <wrap>0</wrap>
+      </binding>
+    </action>
+  </animation>
+
+  <!-- SWITCH-->
+  <model>
+    <path>../divers/switch.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.011 </y-m>
+      <z-m> -0.084 </z-m>
+    </offsets>
+  </model>
+
+</PropertyList>

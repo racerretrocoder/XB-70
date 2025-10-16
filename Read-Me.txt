@@ -1,0 +1,83 @@
+English/Français
+
+[English]
+----------
+
+A little history
+================
+
+North American XB 70 Valkyrie
+=============================
+
+Manufacturer                  :
+Type                          :
+Year                          :
+Powerplant                    :
+Wingspan                      :
+Length                        :
+Height                        :
+weight                        :
+Cruise speed                  :
+Crew                          :
+
+Some useful keys:
+=================
+
+Thanks
+======
+
+Pierre DUVAL for the great 3D model
+
+===============
+3D by Pierre DUVAL
+
+Update
+BARANGER Emmanuel
+July,      15, 2012
+July,      30, 2012
+September, 16, 2025
+
+http://helijah.free.fr/flightgear/hangar.htm
+http://embaranger.free.fr
+embaranger@gmail.com
+
+[Français]
+----------
+
+Un peu d'histoire
+=================
+
+North American XB 70 Valkyrie
+=============================
+
+Constructeur                  :
+Type                          :
+Année                         :
+Moteur                        :
+Envergure                     :
+Longueur                      :
+Hauteur                       :
+Poids à vide                  :
+Vitesse de croisière          :
+Equipage                      :
+
+Quelques touches utiles :
+=========================
+
+Remerciements
+=============
+
+Pierre DUVAL pour son magnifique modèle 3D
+
+===============
+3D par Pierre DUVAL
+
+Mises à jour
+BARANGER Emmanuel
+15 Juillet   2012
+30 Juillet   2012
+16 Septembre 2025
+
+http://helijah.free.fr/flightgear/hangar.htm
+http://embaranger.free.fr
+embaranger@gmail.com

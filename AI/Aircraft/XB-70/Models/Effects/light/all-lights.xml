@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <model>
+    <name>Beacon1On</name>
+    <path>beacon.xml</path>
+    <offsets>
+      <x-m> 0.407 </x-m>
+      <y-m> 0.002 </y-m>
+      <z-m> 0.632 </z-m>
+    </offsets>
+  </model>
+
+  <animation>
+    <name>BeaconOn</name>
+    <object-name>Beacon1On</object-name>
+  </animation>
+
+  <model>
+    <name>Beacon1Off</name>
+    <path>empty.xml</path>
+    <offsets>
+      <x-m> 0.407 </x-m>
+      <y-m> 0.002 </y-m>
+      <z-m> 0.632 </z-m>
+    </offsets>
+  </model>
+
+  <animation>
+    <name>BeaconOff</name>
+    <object-name>Beacon1Off</object-name>
+  </animation>
+
+  <animation>
+    <name>BeaconStrobe</name>
+    <type>timed</type>
+    <object-name>BeaconOn</object-name>
+    <object-name>BeaconOff</object-name>
+    <use-personality type="bool">true</use-personality>
+    <branch-duration-sec>0.1</branch-duration-sec>
+    <branch-duration-sec>1.0</branch-duration-sec>
+  </animation>
+
+  <model>
+    <path>RedLight.xml</path>
+    <offsets>
+      <x-m>  8.877 </x-m>
+      <y-m> -8.455 </y-m>
+      <z-m>  2.092 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>GreenLight.xml</path>
+    <offsets>
+      <x-m> 8.877 </x-m>
+      <y-m> 8.455 </y-m>
+      <z-m> 2.092 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Whitelight.xml</path>
+    <offsets>
+      <x-m> 21.118 </x-m>
+      <y-m> -4.010 </y-m>
+      <z-m>  5.408 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Whitelight.xml</path>
+    <offsets>
+      <x-m> 21.118 </x-m>
+      <y-m>  4.010 </y-m>
+      <z-m>  5.408 </z-m>
+    </offsets>
+  </model>
+
+</PropertyList>

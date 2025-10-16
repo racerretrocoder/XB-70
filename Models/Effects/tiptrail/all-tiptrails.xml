@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <!-- Left -->
+  <model>
+    <name>TrailLeft</name>
+    <path>tiptrail.xml</path>
+    <offsets>
+      <x-m>  25.44396 </x-m>
+      <y-m> -15.45180 </y-m>
+      <z-m>   2.72829 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Right -->
+  <model>
+    <name>TrailRight</name>
+    <path>tiptrail.xml</path>
+    <offsets>
+      <x-m> 25.44396 </x-m>
+      <y-m> 15.45180 </y-m>
+      <z-m>  2.72829 </z-m>
+    </offsets>
+  </model>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>TrailLeft</object-name>
+    <!-- <property>surface-positions/wing-fold-pos-norm</property>-->
+    <property>sim/multiplay/generic/float[30]</property>
+    <factor>-65</factor>
+    <axis>
+      <x1-m> 19.717 </x1-m>
+      <y1-m> -9.442 </y1-m>
+      <z1-m>  2.523 </z1-m>
+      <x2-m> 11.240 </x2-m>
+      <y2-m> -9.442 </y2-m>
+      <z2-m>  2.075 </z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>TrailRight</object-name>
+    <!-- <property>surface-positions/wing-fold-pos-norm</property>-->
+    <property>sim/multiplay/generic/float[30]</property>
+    <factor>65</factor>
+    <axis>
+      <x1-m> 19.717 </x1-m>
+      <y1-m>  9.442 </y1-m>
+      <z1-m>  2.523 </z1-m>
+      <x2-m> 11.240 </x2-m>
+      <y2-m>  9.442 </y2-m>
+      <z2-m>  2.075 </z2-m>
+    </axis>
+  </animation>
+
+</PropertyList>

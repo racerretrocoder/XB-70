@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!-- Speed/Mach Indicator -->
+<PropertyList>
+
+  <path>asi.ac</path>
+
+  <animation>
+    <object-name>fond</object-name>
+    <object-name>face</object-name>
+    <object-name>back</object-name>
+    <object-name>needle</object-name>
+    <object-name>ref</object-name>
+    <object-name>indmach</object-name>
+    <object-name>indknots</object-name>
+    <object-name>indaltlmob</object-name>
+    <object-name>knots1</object-name>
+    <object-name>knots2</object-name>
+    <object-name>knots3</object-name>
+    <object-name>mach1</object-name>
+    <object-name>mach2</object-name>
+    <object-name>mach3</object-name>
+    <object-name>g1</object-name>
+    <object-name>g2</object-name>
+    <object-name>g3</object-name>
+
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>fond</object-name>
+    <object-name>face</object-name>
+    <object-name>indalt</object-name>
+    <object-name>indmach</object-name>
+    <object-name>indknots</object-name>
+    <object-name>indaltlmob</object-name>
+    <object-name>knots1</object-name>
+    <object-name>knots2</object-name>
+    <object-name>knots3</object-name>
+    <object-name>mach1</object-name>
+    <object-name>mach2</object-name>
+    <object-name>mach3</object-name>
+    <object-name>g1</object-name>
+    <object-name>g2</object-name>
+    <object-name>g3</object-name>
+    <object-name>vitre</object-name>
+  </animation>
+
+  <!-- working for Compositor -->
+  <effect>
+    <inherits-from>../../../../Effects/Glass/glass</inherits-from>
+    <object-name>vitre</object-name>
+  </effect>
+
+  <animation>
+    <type>material</type>
+    <object-name>face</object-name>
+    <object-name>indalt</object-name>
+    <object-name>indmach</object-name>
+    <object-name>indknots</object-name>
+    <object-name>indaltlmob</object-name>
+    <object-name>knots1</object-name>
+    <object-name>knots2</object-name>
+    <object-name>knots3</object-name>
+    <object-name>mach1</object-name>
+    <object-name>mach2</object-name>
+    <object-name>mach3</object-name>
+    <object-name>g1</object-name>
+    <object-name>g2</object-name>
+    <object-name>g3</object-name>
+    <condition>
+      <property>controls/electric/battery-switch</property>
+    </condition>
+    <emission>
+      <factor-prop>controls/lighting/instruments-norm</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.40 </green>
+      <blue>  0.30 </blue>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>textranslate</type>
+    <object-name>indmach</object-name>
+    <property>velocities/mach</property>
+    <interpolation>
+      <entry><ind> 0.0 </ind><dep>  0.050 </dep></entry>
+      <entry><ind> 0.1 </ind><dep>  0.000 </dep></entry>
+      <entry><ind> 1.5 </ind><dep> -0.703 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>textranslate</type>
+    <object-name>indknots</object-name>
+    <property>instrumentation/airspeed-indicator/indicated-speed-kt</property>
+    <interpolation>
+      <entry><ind>   0 </ind><dep>  0.050 </dep></entry>
+      <entry><ind> 100 </ind><dep>  0.000 </dep></entry>
+      <entry><ind> 900 </ind><dep> -0.800 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>textranslate</type>
+    <object-name>knots1</object-name>
+    <property>autopilot/settings/target-speed-kt</property>
+    <factor>0.001</factor>
+    <step>100</step>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>textranslate</type>
+    <object-name>knots2</object-name>
+    <property>autopilot/settings/target-speed-kt</property>
+    <factor>0.01</factor>
+    <step>10</step>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>textranslate</type>
+    <object-name>knots3</object-name>
+    <property>autopilot/settings/target-speed-kt</property>
+    <factor>0.1</factor>
+    <step>1</step>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <!-- SWITCH-->
+  <model>
+    <path>../divers/switch.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.023 </y-m>
+      <z-m> -0.078 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>../divers/switch.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.011 </y-m>
+      <z-m> -0.078 </z-m>
+    </offsets>
+  </model>
+
+</PropertyList>

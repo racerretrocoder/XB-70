@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <setting> 0.000 </setting>  <!-- wing tips up -->
+  <setting> 0.385 </setting>  <!-- wing tips -25 deg -->
+  <setting> 1.000 </setting>  <!-- wing tips -65 deg -->
+
+</PropertyList>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <sim               include="views.xml">
+
+
+    <fuel-fraction>1</fuel-fraction>
+
+    <startup>
+      <splash-texture>Aircraft/XB-70/xb-70-splash.png</splash-texture>
+    </startup>
+
+    <sound>
+      <path>Aircraft/XB-70/Sounds/xb-70-sound.xml</path>
+    </sound>
+
+    <model>
+      <path>Aircraft/XB-70/Models/xb-70.xml</path>
+      <livery>
+        <file        type="string"/>
+        <specular>
+          <red       type="float"> 0.03 </red>
+          <green     type="float"> 0.03 </green>
+          <blue      type="float"> 0.03 </blue>
+        </specular>
+      </livery>
+    </model>
+
+    <systems         include="rules.xml"/>
+
+    <instrumentation include="initialisation.xml"/>
+
+    <submodels>
+      <serviceable   type="bool">true</serviceable>
+      <path>Aircraft/XB-70/Models/Effects/Weapons/release.xml</path>
+    </submodels>
+
+    <multiplay>
+      <chat_display>1</chat_display>
+      <generic>
+        <!-- Immat -->
+        <int    n="0"  type="int"/>
+        <int    n="1"  type="int"/>
+        <int    n="2"  type="int"/>
+        <int    n="3"  type="int"/>
+        <int    n="4"  type="int"/>
+        <int    n="5"  type="int"/>
+        <!-- -->
+        <bool   n="2"  alias="/sim/rendering/hdr/hdr-enabled"/>
+        <bool   n="3"  alias="/gear/gear[0]/wow"/>
+        <bool   n="4"  alias="/gear/gear[1]/wow"/>
+        <bool   n="5"  alias="/gear/gear[2]/wow"/>
+        <!-- Lights -->
+        <bool   n="11" alias="/controls/lighting/beacon"/>
+        <bool   n="12" alias="/sim/model/lights/beacon/state"/>
+        <bool   n="13" alias="/controls/lighting/strobe"/>
+        <bool   n="14" alias="/sim/model/lights/sbc1/state"/>
+        <bool   n="15" alias="/controls/lighting/nav-lights"/>
+        <bool   n="16" alias="/controls/lighting/landing-lights"/>
+        <!-- -->
+        <bool   n="17" alias="/controls/engines/engine[0]/cutoff"/>
+        <bool   n="18" alias="/controls/engines/engine[1]/cutoff"/>
+        <bool   n="19" alias="/controls/engines/engine[2]/cutoff"/>
+        <bool   n="20" alias="/controls/engines/engine[3]/cutoff"/>
+        <bool   n="21" alias="/controls/engines/engine[4]/cutoff"/>
+        <bool   n="22" alias="/controls/engines/engine[5]/cutoff"/>
+        <!-- Doors -->
+        <float  n="0"  alias="/sim/model/door-positions/crew/position-norm"/>
+        <float  n="1"  alias="/sim/model/door-positions/passenger/position-norm"/>
+        <!-- -->
+        <float  n="2"  alias="/position/gear-agl-m"/>
+        <float  n="3"  alias="/position/altitude-ft"/>
+        <!-- Engines -->
+        <float  n="4"  alias="/engines/engine[0]/n1"/>
+        <float  n="5"  alias="/engines/engine[1]/n1"/>
+        <float  n="6"  alias="/engines/engine[2]/n1"/>
+        <float  n="7"  alias="/engines/engine[3]/n1"/>
+        <float  n="8"  alias="/engines/engine[4]/n1"/>
+        <float  n="9"  alias="/engines/engine[5]/n1"/>
+        <!-- -->
+        <float  n="10" alias="/controls/engines/engine[0]/throttle"/>
+        <float  n="11" alias="/controls/engines/engine[1]/throttle"/>
+        <float  n="12" alias="/controls/engines/engine[2]/throttle"/>
+        <float  n="13" alias="/controls/engines/engine[3]/throttle"/>
+        <float  n="14" alias="/controls/engines/engine[4]/throttle"/>
+        <float  n="15" alias="/controls/engines/engine[5]/throttle"/>
+        <!-- -->
+        <float  n="16" alias="/controls/engines/engine[0]/afterburner"/>
+        <float  n="17" alias="/controls/engines/engine[1]/afterburner"/>
+        <float  n="18" alias="/controls/engines/engine[2]/afterburner"/>
+        <float  n="19" alias="/controls/engines/engine[3]/afterburner"/>
+        <float  n="20" alias="/controls/engines/engine[4]/afterburner"/>
+        <float  n="21" alias="/controls/engines/engine[5]/afterburner"/>
+        <!-- Ground -->
+        <float  n="22" alias="/gear/gear[0]/rollspeed-ms"/>
+        <float  n="23" alias="/gear/gear[1]/rollspeed-ms"/>
+        <float  n="24" alias="/gear/gear[2]/rollspeed-ms"/>
+        <!-- -->
+        <float  n="25" alias="/gear/gear[0]/compression-norm"/>
+        <float  n="26" alias="/gear/gear[1]/compression-norm"/>
+        <float  n="27" alias="/gear/gear[2]/compression-norm"/>
+        <!-- -->
+        <float  n="28" alias="/gear/gear[0]/caster-angle-deg"/>
+        <!-- -->
+        <float  n="29" alias="/sim/time/sun-angle-rad"/>
+        <!-- -->
+        <float  n="30" alias="/surface-positions/wing-fold-pos-norm"/>
+        <!-- For Bombable -->
+        <int    n="10" type="int" alias="/controls/armament/trigger">0</int>
+        <int    n="11" type="int" alias="/ai/submodels/submodel[0]/count">0</int>
+        <string n="9"  type="string"/>
+      </generic>
+    </multiplay>
+
+    <help            include="help.xml"/>
+
+    <menubar         include="../Dialogs/xb-70-menu.xml"/>
+
+    <flaps           include="flaps.xml"/>
+
+    <wing-sweep      include="wing-sweep.xml"/>
+
+  </sim>
+
+  <input             include="xb-70-keyboard.xml"/>
+
+  <controls          include="controls.xml"/>
+
+  <surface-positions include="surface-positions.xml"/>
+
+  <consumables       include="consumables.xml"/>
+
+  <instrumentation   include="instrumentation.xml">
+    <gsdi>
+      <serviceable   type="bool">true</serviceable>
+      <enabled       type="bool">true</enabled>
+    </gsdi>
+  </instrumentation>
+
+  <nasal>
+    <doors>
+      <file>Aircraft/XB-70/Nasal/doors.nas</file>
+    </doors>
+    <xb70>
+      <file>Aircraft/XB-70/Nasal/hdr.nas</file>
+      <file>Aircraft/XB-70/Nasal/liveries.nas</file>
+      <file>Aircraft/XB-70/Nasal/light.nas</file>
+      <file>Aircraft/XB-70/Nasal/yasim.nas</file>
+      <file>Aircraft/XB-70/Nasal/convert.nas</file>
+      <file>Aircraft/XB-70/Nasal/Electrical.nas</file>
+    </xb70>
+    <engines>
+      <file>Aircraft/XB-70/Nasal/generic-yasim-engine.nas</file>
+      <file>Aircraft/XB-70/Nasal/engines-yasim.nas</file>
+    </engines>
+
+    aircraft.data.add(
+      "instrumentation/nav[0]/audio-btn",
+      "instrumentation/nav[0]/power-btn",
+      "instrumentation/nav[0]/frequencies/selected-mhz",
+      "instrumentation/nav[0]/frequencies/standby-mhz",
+      "instrumentation/nav[0]/to-flag",
+      "instrumentation/nav[0]/from-flag",
+      "instrumentation/nav[0]/radials/selected-deg",
+      "instrumentation/nav[0]/gs-needle-deflection",
+      "instrumentation/nav[0]/heading-needle-deflection",
+      "instrumentation/nav[0]/in-range",
+      "instrumentation/comm[0]/volume",
+      "instrumentation/comm[0]/frequencies/selected-mhz",
+      "instrumentation/comm[0]/frequencies/standby-mhz",
+      "instrumentation/comm[0]/test-btn",
+
+      "instrumentation/nav[1]/audio-btn",
+      "instrumentation/nav[1]/power-btn",
+      "instrumentation/nav[1]/frequencies/selected-mhz",
+      "instrumentation/nav[1]/frequencies/standby-mhz",
+      "instrumentation/nav[1]/to-flag",
+      "instrumentation/nav[1]/from-flag",
+      "instrumentation/nav[1]/radials/selected-deg",
+      "instrumentation/nav[1]/gs-needle-deflection",
+      "instrumentation/nav[1]/heading-needle-deflection",
+      "instrumentation/nav[1]/in-range",
+      "instrumentation/comm[1]/volume",
+      "instrumentation/comm[1]/frequencies/selected-mhz",
+      "instrumentation/comm[1]/frequencies/standby-mhz",
+      "instrumentation/comm[1]/test-btn",
+    );
+
+  </nasal>
+
+</PropertyList>

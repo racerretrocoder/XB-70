@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>aoa-gauge.ac</path>
+
+  <animation>
+    <object-name>fond</object-name>
+    <object-name>face</object-name>
+    <object-name>needle</object-name>
+    <object-name>bkg</object-name>
+    <object-name>off-flag</object-name>
+
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>fond</object-name>
+    <object-name>face</object-name>
+    <object-name>needle</object-name>
+    <object-name>bkg</object-name>
+    <object-name>off-flag</object-name>
+    <object-name>vitre</object-name>
+  </animation>
+
+  <!-- working for Compositor -->
+  <effect>
+    <inherits-from>../../../../Effects/Glass/glass</inherits-from>
+    <object-name>vitre</object-name>
+  </effect>
+
+  <animation>
+    <type>material</type>
+    <object-name>face</object-name>
+    <object-name>needle</object-name>
+    <object-name>bkg</object-name>
+    <object-name>off-flag</object-name>
+    <condition>
+      <property>controls/electric/battery-switch</property>
+    </condition>
+    <emission>
+      <factor-prop>controls/lighting/instruments-norm</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.40 </green>
+      <blue>  0.30 </blue>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>needle</object-name>
+    <property>orientation/alpha-deg</property>
+    <interpolation>
+      <!--        AoA deg           gauge deg -->
+      <entry><ind> -2.5 </ind><dep>  270.0 </dep></entry>
+      <entry><ind> -2.0 </ind><dep>  245.0 </dep></entry>
+      <entry><ind>  0.0 </ind><dep>  182.5 </dep></entry>
+      <entry><ind>  1.0 </ind><dep>  162.5 </dep></entry>
+      <entry><ind>  5.0 </ind><dep>  107.5 </dep></entry>
+      <entry><ind> 11.0 </ind><dep>   57.5 </dep></entry>
+      <entry><ind> 13.0 </ind><dep>   49.0 </dep></entry>
+      <entry><ind> 16.0 </ind><dep>   41.5 </dep></entry>
+      <entry><ind> 30.0 </ind><dep>  270.5 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+</PropertyList>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <model>
+    <name>Smoke4NOALS</name>
+    <path>Classic/smoke4.xml</path>
+  </model>
+
+  <animation>
+    <type>select</type>
+    <object-name>Smoke4NOALS</object-name>
+    <condition>
+      <not><property>/sim/rendering/shaders/skydome</property></not>
+    </condition>
+  </animation>
+
+  <model>
+    <name>Smoke4ALS</name>
+    <path>ALS/smoke4.xml</path>
+  </model>
+
+  <animation>
+    <type>select</type>
+    <object-name>Smoke4ALS</object-name>
+    <condition>
+      <property>/sim/rendering/shaders/skydome</property>
+    </condition>
+  </animation>
+
+  <model>
+    <name>Smoke4HDR</name>
+    <path>HDR/smoke4.xml</path>
+  </model>
+
+  <animation>
+    <type>select</type>
+    <object-name>Smoke4HDR</object-name>
+    <condition>
+      <property>/sim/rendering/hdr/hdr-enabled</property>
+    </condition>
+  </animation>
+
+</PropertyList>
