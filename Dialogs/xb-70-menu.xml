@@ -160,11 +160,7 @@
 			<binding>
 				<command>nasal</command>
 				<script>
-					if(getprop("/gear/gear/compression-ft") > 0.01){
 						if(getprop("/payload/armament/msg")){screen.log.write("Damage OFF",1,0,0);setprop("/payload/armament/msg",0);}else{screen.log.write("Damage ON",1,0,0);setprop("/payload/armament/msg",1);}
-					}else{
-						screen.log.write("Damage can be toggled only when on the ground! Sorry! Its just the way it is.",1,0,0);
-					}
 				</script>
 			</binding>
 		</item>

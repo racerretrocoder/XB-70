@@ -36,7 +36,7 @@ fire_MG = func() {  # b would be in the ()
      #   {
             if (getprop("controls/armament/master-arm") == 1) {
             # var time = getprop("/sim/time/elapsed-sec");
-            if(time - dt > 1) # Adjust this 0 for limit on how many missiles you can shoot at once speed limit
+            if(time - dt > 0) # Adjust this 0 for limit on how many missiles you can shoot at once speed limit
             {
                     var missile = getprop("controls/missile");
     setprop("controls/missile", !missile);
