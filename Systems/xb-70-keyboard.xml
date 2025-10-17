@@ -232,6 +232,92 @@
         <script>engines.autostart();</script>
       </binding>
     </key>
+ <key n="108">
+	 <name>l</name>
+     <desc>Trigger flare release</desc>      
+	 <binding>
+     <command>nasal</command>
+ <script>CMS.updatecms();CMS.trigger();</script>
+      </binding>
+  <binding>
+   <command>property-toggle</command>
+   <property>controls/flare</property>
+  </binding>
+
+    </key>
+	 <key n="114">
+  <name>r</name>
+  <desc>Switch Radar Range</desc>
+  <binding>
+ <command>nasal</command>
+ <script>radar.switch_distance();screen.log.write("Radar Range: " ~ f22.myRadar.rangeTab[radar.rangeIndex] ~ "nm.",1,1,0);</script>
+</binding>
+ </key> 
+<key n="121">
+  <name>y</name>
+  <desc>select target</desc>
+  <binding>
+ <command>nasal</command>
+ <script>radar.next_Target_Index();</script>
+</binding>
+
+ </key> 
+<key n="101">
+  <name>e</name>
+  <desc>Fire selected WCS weapon</desc>
+	<binding>
+		<command>nasal</command>
+		<script>setprop("controls/armament/trigger",1);#guns.fire_MG();</script>
+	</binding>
+    <binding>
+   <command>property-toggle</command>
+   <property>controls/missile</property>
+  </binding>
+
+  <mod-up>
+    <binding>
+      <command>nasal</command>
+      <script>setprop("controls/armament/trigger",0);guns.stopFiring();</script>
+    </binding>
+    <binding>
+      <command>nasal</command>
+      <script>setprop("/controls/armament/missile-trigger", 0);</script>
+    </binding>
+  </mod-up>
+ </key>
+
+ <key n="109">
+  <name>m</name>
+  <desc>Cycle selected WCS AA weapon</desc>
+  <binding>
+ <command>property-cycle</command>
+ <property>controls/armament/selected-weapon</property>
+ <value>AGM-158</value>
+ <value>AGM-154</value>
+ <value>JDAM</value>
+ <value>B61</value>
+</binding>
+  <binding>
+ <command>property-cycle</command>
+ <property>controls/armament/selected-weapon-digit</property>
+ <value>1</value>
+ <value>2</value>
+ <value>4</value>
+</binding>
+  <binding><command>nasal</command><script>screen.log.write("Selected " ~ getprop("controls/armament/selected-weapon"),0.5,0.5,1);</script></binding>
+   <binding><command>nasal</command><script>setprop("/controls/baydoors/AIM120", 0)</script></binding>
+      <binding><command>nasal</command><script>setprop("/controls/missile", 3)</script></binding>
+ </key> 
+<key n="119">
+  <name>w</name>
+  <desc>Cycle Gun/Missile</desc>
+  <binding>
+ <command>property-cycle</command>
+ <property>controls/armament/stick-selector</property> <!--Working!! :D-->
+ <value>1</value>
+ <value>2</value>
+</binding>
+ </key> 	
 
   </keyboard>
 

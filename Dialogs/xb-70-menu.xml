@@ -155,6 +155,85 @@
           <script>aircraft.livery.dialog.toggle()</script>
         </binding>
       </item>
+      <item>
+			<label>Toggle Damage</label>
+			<binding>
+				<command>nasal</command>
+				<script>
+					if(getprop("/gear/gear/compression-ft") > 0.01){
+						if(getprop("/payload/armament/msg")){screen.log.write("Damage OFF",1,0,0);setprop("/payload/armament/msg",0);}else{screen.log.write("Damage ON",1,0,0);setprop("/payload/armament/msg",1);}
+					}else{
+						screen.log.write("Damage can be toggled only when on the ground! Sorry! Its just the way it is.",1,0,0);
+					}
+				</script>
+			</binding>
+		</item>
+
+
+
+      <item>
+			<label>Reload weapons</label>
+			<binding>
+				<command>nasal</command>
+				<script>
+        screen.log.write("Press this menu to reload weapons to fire them again! (You will have to press this everytime you drop everything. despite if you change weapons!)");
+        setprop("Controls/armament/station[0]/release",0);
+        setprop("Controls/armament/station[1]/release",0);
+        setprop("Controls/armament/station[2]/release",0);
+        setprop("Controls/armament/station[3]/release",0);
+        setprop("Controls/armament/station[4]/release",0);
+        setprop("Controls/armament/station[5]/release",0);
+        setprop("Controls/armament/station[6]/release",0);
+        setprop("Controls/armament/station[7]/release",0);
+        setprop("Controls/armament/station[8]/release",0);
+        setprop("Controls/armament/station[9]/release",0);
+        setprop("Controls/armament/station[10]/release",0);
+        setprop("Controls/armament/station[11]/release",0);
+        setprop("Controls/armament/station[12]/release",0);
+        setprop("Controls/armament/station[13]/release",0);
+        setprop("Controls/armament/station[14]/release",0);
+        setprop("Controls/armament/station[15]/release",0);
+        setprop("Controls/armament/station[16]/release",0);
+        setprop("Controls/armament/station[17]/release",0);
+        setprop("Controls/armament/station[18]/release",0);
+        setprop("Controls/armament/station[19]/release",0);
+        setprop("Controls/armament/station[20]/release",0);
+
+				</script>
+			</binding>
+		</item>
+
+      <item>
+			<label>Remove weapons</label>
+			<binding>
+				<command>nasal</command>
+				<script>
+        screen.log.write("Weapons Removed Successfully | XB-70 Dearmed");
+        setprop("Controls/armament/station[0]/release",1);
+        setprop("Controls/armament/station[1]/release",1);
+        setprop("Controls/armament/station[2]/release",1);
+        setprop("Controls/armament/station[3]/release",1);
+        setprop("Controls/armament/station[4]/release",1);
+        setprop("Controls/armament/station[5]/release",1);
+        setprop("Controls/armament/station[6]/release",1);
+        setprop("Controls/armament/station[7]/release",1);
+        setprop("Controls/armament/station[8]/release",1);
+        setprop("Controls/armament/station[9]/release",1);
+        setprop("Controls/armament/station[10]/release",1);
+        setprop("Controls/armament/station[11]/release",1);
+        setprop("Controls/armament/station[12]/release",1);
+        setprop("Controls/armament/station[13]/release",1);
+        setprop("Controls/armament/station[14]/release",1);
+        setprop("Controls/armament/station[15]/release",1);
+        setprop("Controls/armament/station[16]/release",1);
+        setprop("Controls/armament/station[17]/release",1);
+        setprop("Controls/armament/station[18]/release",1);
+        setprop("Controls/armament/station[19]/release",1);
+        setprop("Controls/armament/station[20]/release",1);
+				</script>
+			</binding>
+		</item>
+
     </menu>
   </default>
 

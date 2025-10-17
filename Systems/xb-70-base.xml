@@ -106,10 +106,10 @@
         <float  n="29" alias="/sim/time/sun-angle-rad"/>
         <!-- -->
         <float  n="30" alias="/surface-positions/wing-fold-pos-norm"/>
-        <!-- For Bombable -->
+        <!-- For Bombable
         <int    n="10" type="int" alias="/controls/armament/trigger">0</int>
         <int    n="11" type="int" alias="/ai/submodels/submodel[0]/count">0</int>
-        <string n="9"  type="string"/>
+        <string n="9"  type="string"/> -->
       </generic>
     </multiplay>
 
@@ -121,7 +121,410 @@
 
     <wing-sweep      include="wing-sweep.xml"/>
 
+
+    <!--Weapon stations-->
+       <weight n="0">
+      <name>pylon1</name>
+      <weight-lb type="double"> 0 </weight-lb>
+      <selected>none</selected>
+      <offsets>
+    <x-m type="double"> -0.4  </x-m>
+    <y-m type="double"> 0.39 </y-m>
+    <z-m type="double"> -1.6 </z-m>
+      </offsets>
+      <opt><name>none</name>              <lbs type="double">    0.00 </lbs></opt>
+      <opt><name>B61</name>                           <lbs type="double">  230.21 </lbs></opt>
+      <opt><name>GAM-87</name>            <lbs type="double">  230.00 </lbs></opt>
+      <opt><name>AGM-158</name>                 <lbs type="double">  230.91 </lbs></opt>
+      <opt><name>AGM-154</name>            <lbs type="double">  230.00 </lbs></opt>
+      <opt><name>JDAM</name>              <lbs type="double">  230.00 </lbs></opt>
+    </weight>
+
+    <weight n="1">
+      <name>pylon2</name>
+      <weight-lb type="double"> 0 </weight-lb>
+      <selected>none</selected>
+      <offsets>
+    <x-m type="double"> -0.4  </x-m>
+    <y-m type="double"> 0.67 </y-m>
+    <z-m type="double"> -1.6 </z-m>
+      </offsets>
+      <opt><name>none</name>              <lbs type="double">    0.00 </lbs></opt>
+      <opt><name>AIM-260</name>                           <lbs type="double">  230.21 </lbs></opt>
+      <opt><name>MK84</name>            <lbs type="double">  230.00 </lbs></opt>
+      <opt><name>AGM-158</name>                 <lbs type="double">  230.91 </lbs></opt>
+      <opt><name>AGM-154</name>            <lbs type="double">  230.00 </lbs></opt>
+      <opt><name>JDAM</name>              <lbs type="double">  230.00 </lbs></opt>
+    </weight>
+
+    <weight n="2">
+      <name>pylon3</name>
+      <tank>2</tank>
+      <weight-lb type="double"> 0 </weight-lb>
+      <offsets>
+          <x-m type="double"> -0.4 </x-m>
+          <y-m type="double"> -3.4 </y-m>
+          <z-m type="double"> -1.1 </z-m>
+      </offsets>
+      <selected>none</selected>
+      <opt><name>none</name>              <lbs type="double">    0.00 </lbs></opt>
+      <opt><name>AIM-260</name>                           <lbs type="double">  230.21 </lbs></opt>
+      <opt><name>MK84</name>            <lbs type="double">  230.00 </lbs></opt>
+      <opt><name>AGM-158</name>                 <lbs type="double">  230.91 </lbs></opt>
+      <opt><name>AGM-154</name>            <lbs type="double">  230.00 </lbs></opt>
+      <opt><name>JDAM</name>              <lbs type="double">  230.00 </lbs></opt>
+    </weight>
+
+    <weight n="3">
+      <name>pylon4</name>
+      <weight-lb type="double"> 0 </weight-lb>
+      <selected>none</selected>
+      <offsets>
+    <x-m type="double"> -0.4  </x-m>
+    <y-m type="double"> -0.67 </y-m>
+    <z-m type="double"> -1.6 </z-m>
+      </offsets>
+    </weight>
+
+    <weight n="4">
+      <name>pylon5</name>
+      <weight-lb type="double"> 0 </weight-lb>
+      <selected>none</selected>
+      <offsets>
+          <x-m type="double"> -0.4 </x-m>
+          <y-m type="double"> 3.4 </y-m>
+          <z-m type="double"> -1.1 </z-m>
+      </offsets>
+    </weight>
+
+    <weight n="5">
+      <name>pylon6</name>
+      <weight-lb type="double"> 0 </weight-lb>
+      <selected>none</selected>
+      <offsets>
+    <x-m type="double"> -0.4  </x-m>
+    <y-m type="double"> -0.95 </y-m>
+    <z-m type="double"> -1.6 </z-m>
+      </offsets>
+      <opt><name>none</name>              <lbs type="double">    0.00 </lbs></opt>
+      <opt><name>AIM-260</name>                           <lbs type="double">  230.21 </lbs></opt>
+      <opt><name>MK84</name>            <lbs type="double">  230.00 </lbs></opt>
+      <opt><name>AGM-158</name>                 <lbs type="double">  230.91 </lbs></opt>
+      <opt><name>AGM-154</name>            <lbs type="double">  230.00 </lbs></opt>
+      <opt><name>JDAM</name>              <lbs type="double">  230.00 </lbs></opt>
+    </weight>
+
+
+<!--pylon 7 and pylon 8 are aim-9s!-->
+    <weight n="6">
+      <name>pylon7</name>
+      <weight-lb type="double"> 0 </weight-lb>
+      <selected>none</selected>
+      <offsets>
+<x-m type="double"> -1.0  </x-m>
+<y-m type="double"> 1.7 </y-m>
+<z-m type="double"> -1.3 </z-m>
+      </offsets>
+      <opt><name>none</name>              <lbs type="double">    0.00 </lbs></opt>
+      <opt><name>AGM-84</name>             <lbs type="double">  230.21 </lbs></opt>
+      <opt><name>MK84</name>            <lbs type="double">  230.00 </lbs></opt>
+      <opt><name>AGM-158</name>             <lbs type="double">  230.91 </lbs></opt>
+      <opt><name>AGM-154</name>            <lbs type="double">  230.00 </lbs></opt>
+      <opt><name>JDAM</name>              <lbs type="double">  230.00 </lbs></opt>
+      <opt><name>R-73</name>              <lbs type="double">  230.00 </lbs></opt>
+    </weight>
+
+
+<!--pylon 7 and pylon 8 are aim-9s!-->
+
+    <weight n="7">
+      <name>pylon8</name>
+      <weight-lb type="double"> 0 </weight-lb>
+      <selected>none</selected>
+      <offsets>
+<x-m type="double"> -1.0  </x-m>
+<y-m type="double"> -1.7 </y-m>
+<z-m type="double"> -1.3 </z-m>
+      </offsets>
+      <opt><name>none</name>              <lbs type="double">    0.00 </lbs></opt>
+      <opt><name>AGM-84</name>                           <lbs type="double">  230.21 </lbs></opt>
+      <opt><name>MK84</name>            <lbs type="double">  230.00 </lbs></opt>
+      <opt><name>AGM-158</name>                 <lbs type="double">  230.91 </lbs></opt>
+      <opt><name>AGM-154</name>            <lbs type="double">  230.00 </lbs></opt>
+      <opt><name>JDAM</name>              <lbs type="double">  230.00 </lbs></opt>
+      <opt><name>R-73</name>              <lbs type="double">  230.00 </lbs></opt>
+    </weight>
+
+    <weight n="8">
+      <name>pylon9</name>
+      <weight-lb type="double"> 0 </weight-lb>
+      <selected>none</selected>
+      <offsets>
+          <x-m type="double"> -0.4</x-m>
+          <y-m type="double"> -1.235 </y-m>
+          <z-m type="double"> -1.324 </z-m>
+      </offsets>
+      <opt><name>none</name>              <lbs type="double">    0.00 </lbs></opt>
+      <opt><name>AGM-84</name>                           <lbs type="double">  230.21 </lbs></opt>
+      <opt><name>MK84</name>            <lbs type="double">  230.00 </lbs></opt>
+      <opt><name>AGM-158</name>                 <lbs type="double">  230.91 </lbs></opt>
+      <opt><name>AGM-154</name>            <lbs type="double">  230.00 </lbs></opt>
+      <opt><name>JDAM</name>              <lbs type="double">  230.00 </lbs></opt>
+    </weight>
+
+    <weight n="9">
+      <name>pylon10</name>
+      <weight-lb type="double"> 0 </weight-lb>
+      <selected>none</selected>
+      <offsets>
+    <x-m type="double"> -0.4  </x-m>
+    <y-m type="double"> -0.39 </y-m>
+    <z-m type="double"> -1.6 </z-m>
+      </offsets>
+      <opt><name>none</name>              <lbs type="double">    0.00 </lbs></opt>
+      <opt><name>AGM-84</name>                           <lbs type="double">  230.21 </lbs></opt>
+      <opt><name>MK84</name>            <lbs type="double">  230.00 </lbs></opt>
+      <opt><name>AGM-158</name>                 <lbs type="double">  230.91 </lbs></opt>
+      <opt><name>AGM-154</name>            <lbs type="double">  230.00 </lbs></opt>
+      <opt><name>JDAM</name>              <lbs type="double">  230.00 </lbs></opt>
+
+    </weight>
+
+
+
+
+	    <weight n="10">
+      <name>pylon11</name>  <!--For ejection seat-->
+      <weight-lb type="double"> 0 </weight-lb>
+      <selected>eject</selected>
+      <offsets>
+
+			<x-m archive="y">5</x-m><!--  direita/esquerda/de z para x   -->
+			<y-m archive="y">0</y-m><!-- cima/baixo/de y para y   -->
+			<z-m archive="y">-5.1</z-m><!--  frente/atraz/de x para z  -->
+      </offsets>
+
+    </weight>
+
+
+   <weight n="11">
+      <name>pylon4-2</name>
+      <weight-lb type="double"> 0 </weight-lb>
+      <selected>none</selected>
+      <offsets>
+    <x-m type="double"> -0.4  </x-m>
+    <y-m type="double"> -0.67 </y-m>
+    <z-m type="double"> -1.6 </z-m>
+      </offsets>
+    </weight>
+
+
+    <weight n="12">
+      <name>pylon10-2</name>
+      <weight-lb type="double"> 0 </weight-lb>
+      <selected>none</selected>
+      <offsets>
+    <x-m type="double"> -0.4  </x-m>
+    <y-m type="double"> -0.39 </y-m>
+    <z-m type="double"> -1.6 </z-m>
+      </offsets>
+      <opt><name>none</name>              <lbs type="double">    0.00 </lbs></opt>
+      <opt><name>AGM-84</name>                           <lbs type="double">  230.21 </lbs></opt>
+      <opt><name>MK84</name>            <lbs type="double">  230.00 </lbs></opt>
+      <opt><name>AGM-158</name>                 <lbs type="double">  230.91 </lbs></opt>
+      <opt><name>AGM-154</name>            <lbs type="double">  230.00 </lbs></opt>
+      <opt><name>JDAM</name>              <lbs type="double">  230.00 </lbs></opt>
+
+    </weight>
+	    <weight n="13">
+      <name>pylon1-2</name>
+      <weight-lb type="double"> 0 </weight-lb>
+      <selected>none</selected>
+      <offsets>
+    <x-m type="double"> -0.4  </x-m>
+    <y-m type="double"> 0.39 </y-m>
+    <z-m type="double"> -1.6 </z-m>
+      </offsets>
+      <opt><name>none</name>              <lbs type="double">    0.00 </lbs></opt>
+      <opt><name>AGM-84</name>                           <lbs type="double">  230.21 </lbs></opt>
+      <opt><name>MK84</name>            <lbs type="double">  230.00 </lbs></opt>
+      <opt><name>AGM-158</name>                 <lbs type="double">  230.91 </lbs></opt>
+      <opt><name>AGM-154</name>            <lbs type="double">  230.00 </lbs></opt>
+      <opt><name>JDAM</name>              <lbs type="double">  230.00 </lbs></opt>
+    </weight>
+
+    <weight n="14">
+      <name>pylon2-1</name>
+      <weight-lb type="double"> 0 </weight-lb>
+      <selected>none</selected>
+      <offsets>
+    <x-m type="double"> -0.4  </x-m>
+    <y-m type="double"> 0.67 </y-m>
+    <z-m type="double"> -1.6 </z-m>
+      </offsets>
+      <opt><name>none</name>              <lbs type="double">    0.00 </lbs></opt>
+      <opt><name>AGM-84</name>                           <lbs type="double">  230.21 </lbs></opt>
+      <opt><name>MK84</name>            <lbs type="double">  230.00 </lbs></opt>
+      <opt><name>AGM-158</name>                 <lbs type="double">  230.91 </lbs></opt>
+      <opt><name>AGM-154</name>            <lbs type="double">  230.00 </lbs></opt>
+      <opt><name>JDAM</name>              <lbs type="double">  230.00 </lbs></opt>
+    </weight>
+
+
+	    <weight n="15">
+      <name>pylon1-2</name>
+      <weight-lb type="double"> 0 </weight-lb>
+      <selected>none</selected>
+      <offsets>
+    <x-m type="double"> -0.4  </x-m>
+    <y-m type="double"> 0.39 </y-m>
+    <z-m type="double"> -1.6 </z-m>
+      </offsets>
+      <opt><name>none</name>              <lbs type="double">    0.00 </lbs></opt>
+      <opt><name>AGM-84</name>                           <lbs type="double">  230.21 </lbs></opt>
+      <opt><name>MK84</name>            <lbs type="double">  230.00 </lbs></opt>
+      <opt><name>AGM-158</name>                 <lbs type="double">  230.91 </lbs></opt>
+      <opt><name>AGM-154</name>            <lbs type="double">  230.00 </lbs></opt>
+      <opt><name>JDAM</name>              <lbs type="double">  230.00 </lbs></opt>
+    </weight>
+
+    <weight n="16">
+      <name>pylon2-1</name>
+      <weight-lb type="double"> 0 </weight-lb>
+      <selected>none</selected>
+      <offsets>
+    <x-m type="double"> -0.4  </x-m>
+    <y-m type="double"> -0.39 </y-m>
+    <z-m type="double"> -1.6 </z-m>
+      </offsets>
+      <opt><name>none</name>              <lbs type="double">    0.00 </lbs></opt>
+      <opt><name>AGM-84</name>                           <lbs type="double">  230.21 </lbs></opt>
+      <opt><name>MK84</name>            <lbs type="double">  230.00 </lbs></opt>
+      <opt><name>AGM-158</name>                 <lbs type="double">  230.91 </lbs></opt>
+      <opt><name>AGM-154</name>            <lbs type="double">  230.00 </lbs></opt>
+      <opt><name>JDAM</name>              <lbs type="double">  230.00 </lbs></opt>
+    </weight>
+
+    <weight n="17">
+      <name>pylon17</name>
+      <weight-lb type="double"> 0 </weight-lb>
+      <offsets>
+          <x-m type="double"> -0.4 </x-m>
+          <y-m type="double"> -3.4 </y-m>
+          <z-m type="double"> -1.1 </z-m>
+      </offsets>
+      <selected>none</selected>
+      <opt><name>none</name>              <lbs type="double">    0.00 </lbs></opt>
+      <opt><name>AGM-84</name>                           <lbs type="double">  230.21 </lbs></opt>
+      <opt><name>MK84</name>            <lbs type="double">  230.00 </lbs></opt>
+      <opt><name>AGM-158</name>                 <lbs type="double">  230.91 </lbs></opt>
+      <opt><name>AGM-154</name>            <lbs type="double">  230.00 </lbs></opt>
+      <opt><name>JDAM</name>              <lbs type="double">  230.00 </lbs></opt>
+    </weight>
+    <weight n="18">
+      <name>pylon18</name>
+      <weight-lb type="double"> 0 </weight-lb>
+      <offsets>
+          <x-m type="double"> -0.4 </x-m>
+          <y-m type="double"> 3.4 </y-m>
+          <z-m type="double"> -1.1 </z-m>
+      </offsets>
+      <selected>none</selected>
+      <opt><name>none</name>              <lbs type="double">    0.00 </lbs></opt>
+      <opt><name>AGM-84</name>                           <lbs type="double">  230.21 </lbs></opt>
+      <opt><name>MK84</name>            <lbs type="double">  230.00 </lbs></opt>
+      <opt><name>AGM-158</name>                 <lbs type="double">  230.91 </lbs></opt>
+      <opt><name>AGM-154</name>            <lbs type="double">  230.00 </lbs></opt>
+      <opt><name>JDAM</name>              <lbs type="double">  230.00 </lbs></opt>
+    </weight>
+    <weight n="19">
+      <name>pylon17</name>
+      <weight-lb type="double"> 0 </weight-lb>
+      <offsets>
+          <x-m type="double"> -0.4 </x-m>
+          <y-m type="double"> -3.4 </y-m>
+          <z-m type="double"> -1.1 </z-m>
+      </offsets>
+      <selected>none</selected>
+      <opt><name>none</name>              <lbs type="double">    0.00 </lbs></opt>
+      <opt><name>AGM-84</name>                           <lbs type="double">  230.21 </lbs></opt>
+      <opt><name>MK84</name>            <lbs type="double">  230.00 </lbs></opt>
+      <opt><name>AGM-158</name>                 <lbs type="double">  230.91 </lbs></opt>
+      <opt><name>AGM-154</name>            <lbs type="double">  230.00 </lbs></opt>
+      <opt><name>JDAM</name>              <lbs type="double">  230.00 </lbs></opt>
+    </weight>
+    <weight n="20">
+      <name>pylon18</name>
+      <weight-lb type="double"> 0 </weight-lb>
+      <offsets>
+          <x-m type="double"> -0.4 </x-m>
+          <y-m type="double"> 3.4 </y-m>
+          <z-m type="double"> -1.1 </z-m>
+      </offsets>
+      <selected>none</selected>
+      <opt><name>none</name>              <lbs type="double">    0.00 </lbs></opt>
+      <opt><name>AGM-84</name>                           <lbs type="double">  230.21 </lbs></opt>
+      <opt><name>MK84</name>            <lbs type="double">  230.00 </lbs></opt>
+      <opt><name>AGM-158</name>                 <lbs type="double">  230.91 </lbs></opt>
+      <opt><name>AGM-154</name>            <lbs type="double">  230.00 </lbs></opt>
+      <opt><name>JDAM</name>              <lbs type="double">  230.00 </lbs></opt>
+    </weight>
+
+
   </sim>
+
+  
+   <damage>
+        <sounds>
+            <nearby-explode-on type="bool">false</nearby-explode-on>
+            <missile-hit type="bool">false</missile-hit>
+        </sounds>
+        <fire>
+            <crashsmolfire type="bool">false</crashsmolfire>
+            <crashsmoke type="bool">false</crashsmoke>
+            <crashflame type="bool">false</crashflame>
+            <serviceable type="bool">false</serviceable>
+        </fire>
+    </damage>
+	<!-- payload options -->
+
+<payload>
+        <d-config>
+            <full_damage_dist_m type="double">-4</full_damage_dist_m>
+            <use_hitpoints_instead_of_failure_modes_bool type="bool">false</use_hitpoints_instead_of_failure_modes_bool>
+            <hp_max type="double">800</hp_max>
+            <hitable_by_air_munitions type="bool">true</hitable_by_air_munitions>
+            <hitable_by_cannon type="bool">true</hitable_by_cannon>
+            <is_fleet type="bool">false</is_fleet>
+            <rwr_to_screen type="bool">true</rwr_to_screen>
+            <rwr_audio_extended type="bool">true</rwr_audio_extended>
+            <tacview_supported type="bool">false</tacview_supported>
+            <m28_auto type="bool">false</m28_auto>
+            <mlw_max type="double">60</mlw_max>
+            <auto_flare_caller type="bool">false</auto_flare_caller>
+		</d-config>
+		<!-- Yep. this should go here... -->
+	
+
+		
+	  <armament>
+	              <flares type="int">0</flares>
+            <enable-craters type="bool">true</enable-craters>
+            <MLW-bearing type="double">0</MLW-bearing>
+            <MLW-count type="int">0</MLW-count>
+            <MLW-launcher type="string"></MLW-launcher>
+            <MAW-bearing type="double">0</MAW-bearing>
+            <MAW-active type="bool">false</MAW-active>
+            <MAW-semiactive type="bool">false</MAW-semiactive>
+            <msg type="bool">false</msg>
+			<oldmsg type="bool">false</oldmsg>
+            <spike type="bool">false</spike>
+            <models type="string">Aircraft/XB-70/Models/emesary/</models>
+        </armament>
+    </payload>
+
+
+
 
   <input             include="xb-70-keyboard.xml"/>
 
@@ -142,6 +545,7 @@
     <doors>
       <file>Aircraft/XB-70/Nasal/doors.nas</file>
     </doors>
+
     <xb70>
       <file>Aircraft/XB-70/Nasal/hdr.nas</file>
       <file>Aircraft/XB-70/Nasal/liveries.nas</file>
@@ -155,6 +559,47 @@
       <file>Aircraft/XB-70/Nasal/engines-yasim.nas</file>
     </engines>
 
+	  <notifications>
+            <file>Aircraft/XB-70/Nasal/ArmamentNotification.nas</file>
+            <file>Aircraft/XB-70/Nasal/GeoBridgedTransmitter.nas</file>
+    </notifications>
+     <vector>
+            <file>Aircraft/XB-70/Nasal/vector.nas</file> <!--math stuff. not thrust lol-->
+        </vector>
+    	<!-- Main Radar -->
+    <radar>
+      <file>Aircraft/XB-70/Nasal/radar2.nas</file> 
+    </radar>
+    <f22>
+    <file>Aircraft/XB-70/Nasal/radarinit.nas</file>
+    </f22>
+        <lockhelper>
+            <file>Aircraft/XB-70/Nasal/lockhelper.nas</file><!-- my 3rd custom nasal script! :D -->
+        </lockhelper>
+        <damage>
+            <file>Aircraft/XB-70/Nasal/damage.nas</file>
+        </damage>
+
+<!--AI Searcher-->
+		<misc>
+			<file>Aircraft/XB-70/Nasal/misc.nas</file>
+		</misc>
+
+      <!-- Portable Missile System-->
+    <missile>
+      <file>Aircraft/XB-70/Nasal/weapons/missile.nas</file>
+      <file>Aircraft/XB-70/Nasal/weapons/Loading_Missiles.nas</file>
+      <file>Aircraft/XB-70/Nasal/weapons/missile_GroundTargeting.nas</file>
+    </missile>
+
+    <m2000_load>
+      <file>Aircraft/XB-70/Nasal/weapons/ext_stores.nas</file>
+    </m2000_load>
+            <guns>
+      <file>Aircraft/XB-70/Nasal/weapons.nas</file>
+    </guns>
+        
+    <!--Why is there just random nasal code here!-->
     aircraft.data.add(
       "instrumentation/nav[0]/audio-btn",
       "instrumentation/nav[0]/power-btn",
