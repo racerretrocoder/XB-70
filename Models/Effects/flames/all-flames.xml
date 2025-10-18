@@ -9,7 +9,7 @@
       <not><property>sim/multiplay/generic/bool[17]</property></not>
     </condition>
     <offsets>
-      <x-m> 22.340 </x-m>
+      <x-m> 22.940 </x-m>
       <y-m> -3.718 </y-m>
       <z-m>  1.984 </z-m>
     </offsets>
@@ -22,7 +22,7 @@
       <not><property>sim/multiplay/generic/bool[18]</property></not>
     </condition>
     <offsets>
-      <x-m> 22.340 </x-m>
+      <x-m> 22.940 </x-m>
       <y-m> -2.229 </y-m>
       <z-m>  1.984 </z-m>
     </offsets>
@@ -35,7 +35,7 @@
       <not><property>sim/multiplay/generic/bool[19]</property></not>
     </condition>
     <offsets>
-      <x-m> 22.340 </x-m>
+      <x-m> 22.940 </x-m>
       <y-m> -0.739 </y-m>
       <z-m>  1.984 </z-m>
     </offsets>
@@ -48,7 +48,7 @@
       <not><property>sim/multiplay/generic/bool[20]</property></not>
     </condition>
     <offsets>
-      <x-m> 22.340 </x-m>
+      <x-m> 22.940 </x-m>
       <y-m>  0.739 </y-m>
       <z-m>  1.984 </z-m>
     </offsets>
@@ -61,7 +61,7 @@
       <not><property>sim/multiplay/generic/bool[21]</property></not>
     </condition>
     <offsets>
-      <x-m> 22.340 </x-m>
+      <x-m> 22.940 </x-m>
       <y-m>  2.229 </y-m>
       <z-m>  1.984 </z-m>
     </offsets>
@@ -74,7 +74,7 @@
       <not><property>sim/multiplay/generic/bool[22]</property></not>
     </condition>
     <offsets>
-      <x-m> 22.340 </x-m>
+      <x-m> 22.940 </x-m>
       <y-m>  3.718 </y-m>
       <z-m>  1.984 </z-m>
     </offsets>
